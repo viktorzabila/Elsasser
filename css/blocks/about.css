@@ -1,0 +1,105 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: #000; }
+
+body {
+  line-height: 1.42; }
+
+a {
+  transition: 300ms;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #000; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.btn {
+  cursor: pointer;
+  transition: 0.3s; }
+
+.btn:hover, .btn:active {
+  background: #b20012; }
+
+.hr {
+  width: 180px;
+  color: #d1d3d4; }
+
+.button--n {
+  display: none; }
+
+.about {
+  background: #fbfbfc; }
+  .about__title {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 4.42px;
+    line-height: 40px;
+    font-family: 'BBC Reith Sans';
+    color: #020303;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 80px; }
+    @media screen and (max-width: 376px) {
+      .about__title {
+        padding-top: 30px; } }
+  .about__item {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    background: #fff;
+    margin: 5px; }
+    .about__item--mb {
+      margin-bottom: 60px; }
+      @media screen and (max-width: 1200px) {
+        .about__item--mb {
+          margin-bottom: 0px; } }
+      @media screen and (max-width: 900px) {
+        .about__item--mb {
+          margin-bottom: 50px; } }
+  .about__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 1200px) {
+      .about__items {
+        margin-left: 5%; } }
+    @media screen and (max-width: 376px) {
+      .about__items {
+        margin-left: 0px; } }
+  .about__text {
+    font-size: 19px;
+    font-family: 'Noto Sans';
+    font-weight: 500;
+    color: #45494f;
+    max-width: 240px; }
+  .about__img {
+    margin: 40px 30px 40px; }
+    .about__img--mr {
+      margin: 50px 30px 50px; }

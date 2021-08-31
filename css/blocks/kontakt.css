@@ -1,0 +1,165 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: #000; }
+
+body {
+  line-height: 1.42; }
+
+a {
+  transition: 300ms;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #000; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.btn {
+  cursor: pointer;
+  transition: 0.3s; }
+
+.btn:hover, .btn:active {
+  background: #b20012; }
+
+.hr {
+  width: 180px;
+  color: #d1d3d4; }
+
+.button--n {
+  display: none; }
+
+.kontakt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff; }
+  .kontakt__title {
+    font-size: 34px;
+    color: #1652ac;
+    font-weight: bold;
+    margin-right: 50px;
+    max-width: 450px;
+    white-space: no-wrap;
+    display: inline-block; }
+    @media screen and (max-width: 900px) {
+      .kontakt__title {
+        margin-top: 3%; } }
+    @media screen and (max-width: 376px) {
+      .kontakt__title {
+        display: none; } }
+  .kontakt__ad {
+    display: none; }
+    @media screen and (max-width: 376px) {
+      .kontakt__ad {
+        display: block;
+        font-size: 26px;
+        color: #1652ac;
+        font-weight: bold;
+        margin-bottom: 30px; } }
+  .kontakt__text {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Noto Sans';
+    color: #464C53;
+    max-width: 410px;
+    letter-spacing: -0.4px;
+    margin-right: 50px;
+    line-height: 32px; }
+    @media screen and (max-width: 900px) {
+      .kontakt__text {
+        margin-top: 30px;
+        margin-right: 3%; } }
+    @media screen and (max-width: 376px) {
+      .kontakt__text {
+        margin-left: 8%;
+        font-weight: 400;
+        line-height: 32px;
+        font-size: 16px;
+        max-width: 290px;
+        margin-right: 0px; } }
+    .kontakt__text--mb {
+      margin-bottom: 50px;
+      margin-top: 75px; }
+      @media screen and (max-width: 900px) {
+        .kontakt__text--mb {
+          margin-top: 30px;
+          margin-right: 3%; } }
+      @media screen and (max-width: 376px) {
+        .kontakt__text--mb {
+          margin-top: 0px; } }
+    .kontakt__text--pb {
+      padding-bottom: 50px; }
+    .kontakt__text__link {
+      color: #2e75ff;
+      text-decoration: none; }
+      @media screen and (max-width: 376px) {
+        .kontakt__text__link {
+          margin-left: 90px;
+          display: inherit; } }
+  .kontakt__img {
+    margin-top: 50px;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 900px) {
+      .kontakt__img {
+        margin-bottom: 0px; } }
+    @media screen and (max-width: 376px) {
+      .kontakt__img {
+        margin-bottom: 25px; } }
+  .kontakt__button {
+    color: #ffffff;
+    padding: 0px;
+    width: 300px;
+    margin: 0px; }
+    @media screen and (max-width: 376px) {
+      .kontakt__button {
+        width: 340px;
+        margin: 0px 5px; } }
+    @media screen and (max-width: 320px) {
+      .kontakt__button {
+        width: 260px; } }
+  .kontakt__arr {
+    margin-right: 20px;
+    display: inline-block; }
+    @media screen and (max-width: 376px) {
+      .kontakt__arr {
+        margin-right: 30px; } }
+  .kontakt__href {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 100px; }
+    @media screen and (max-width: 376px) {
+      .kontakt__href {
+        margin-right: 130px; } }
+    @media screen and (max-width: 320px) {
+      .kontakt__href {
+        margin-right: 50px; } }
+  @media screen and (max-width: 900px) {
+    .kontakt {
+      flex-direction: column; } }
+  @media screen and (max-width: 376px) {
+    .kontakt {
+      display: flex;
+      flex-direction: column-reverse; } }

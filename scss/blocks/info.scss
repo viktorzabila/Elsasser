@@ -1,0 +1,111 @@
+@import '../mixin';
+
+.info {
+	display: flex;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 90px;
+	&__container {
+		background: linear-gradient(180deg, #163da2 0%, #003584 100%);
+		width: 900px;
+		@include laptops {
+			width: 50%;
+			height: 50%;
+		}
+		@include tablets {
+			order: 1;
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-bottom: 50px;
+		}
+		@include phones {
+			display: block;
+			width: 100%;
+			padding: 0px;
+		}
+	}
+
+	&__item {
+		margin-left: 180px;
+		margin-top: 150px;
+		margin-right: 240px;
+		@include laptops {
+			margin-right: 20%;
+			margin-left: 5%;
+			margin-bottom: 42%;
+			margin-top: 18%;
+		}
+		@include tablets {
+			margin-bottom: 15%;
+			margin-right: 10%;
+			margin-top: 10%;
+		}
+		@include phones {
+			margin: 0px 20px 40px 0px;
+			padding: 0px;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 20px;
+		font-family: 'BBC Reith Sans';
+		color: #fbfdff;
+		letter-spacing: 2.42px;
+		margin-bottom: 20px;
+		@include phones {
+			margin: 40px 0px 15px 10px;
+		}
+	}
+
+	&__text {
+		max-width: 500px;
+		font-size: 17px;
+		font-weight: 400;
+		font-family: 'Noto Sans';
+		color: #fbfdff;
+		line-height: 32px;
+		&--mb {
+			margin-bottom: 40px;
+		}
+		@include phones {
+			max-width: 100%;
+			font-size: 16px;
+			margin-left: 10px;
+			padding: 0px;
+		}
+	}
+
+	&__img {
+		@include laptops {
+			width: 50%;
+		}
+		@include tablets {
+			order: 2;
+			width: 80%;
+			margin-left: 5%;
+			margin-right: 15%;
+			height: 600px;
+			object-fit: contain;
+		}
+		@include phones {
+			order: 1;
+			width: 375px;
+			height: 500px;
+			margin: 0px;
+		}
+	}
+
+	@include tablets {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+	@include phones {
+		flex-direction: column;
+		padding-bottom: 0px;
+	}
+}

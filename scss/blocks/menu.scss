@@ -1,0 +1,46 @@
+@import '../mixin';
+
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__img {
+		margin-right: 70px;
+		@include phones {
+			margin-right: 140px;
+		}
+	}
+	&__list {
+		display: flex;
+		margin-bottom: 0px;
+	}
+
+	&__item {
+		font-size: 17px;
+		font-weight: 400;
+		font-family: 'Noto Sans';
+		margin-right: 30px;
+		white-space: nowrap;
+	}
+
+	&__item:last-child {
+		margin-right: 0px;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #45494f;
+		&--blue {
+			color: #2e75ff;
+			border: 2px solid;
+			border-color: #eaedf5;
+			padding: 3px 15px;
+			border-radius: 10px;
+		}
+	}
+	@include laptops {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

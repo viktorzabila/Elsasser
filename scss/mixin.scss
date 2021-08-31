@@ -1,0 +1,110 @@
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+%list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+@mixin arr() {
+	@media screen and (max-width: 1400px) {
+		@content;
+	}
+}
+
+@mixin laptops() {
+	@media screen and (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin tablets() {
+	@media screen and (max-width: 900px) {
+		@content;
+	}
+}
+
+@mixin phones() {
+	@media screen and (max-width: 376px) {
+		@content;
+	}
+}
+
+@mixin s-phones() {
+	@media screen and (max-width: 320px) {
+		@content;
+	}
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: #000;
+}
+
+body {
+  line-height: 1.42;
+}
+
+a {
+  	transition: 300ms;
+	text-decoration: none;
+  	&:hover, &:focus {
+    color: #000;
+  }
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn:hover, .btn:active {
+	background: #b20012;
+}
+
+.hr {
+	width: 180px; 
+	color: #d1d3d4;
+}
+
+.button--n {
+	display: none;
+}

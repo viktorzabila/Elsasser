@@ -1,0 +1,170 @@
+@import '../mixin';
+
+.main {
+	display: flex;
+	background: #e5e5e5;
+	&__top {
+		display: flex;
+		align-items: center;
+		@include laptops {
+			display: flex;
+			margin-left: 5%;
+		}
+		@include laptops {
+			flex-direction: column;
+			margin-right: 10%;
+			align-items: start;
+		}
+	}
+
+	&__img {
+		margin-left: 150px;
+		@include laptops {
+			margin-left: 0px;
+			width: 50%;
+		}
+		@include tablets {
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		@include phones {
+			display: none;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		@include laptops {
+			margin-bottom: 50px;
+		}
+		@include tablets {
+			flex-direction: column;
+		}
+		@include phones {
+			flex-direction: column;
+			margin-bottom: 0px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		@include tablets {
+			margin-right: 5%;
+			margin-left: 5%;
+			align-items: start;
+			order: 1;
+		}
+		@include phones {
+			margin-bottom: 40px;
+			order: 1;
+		}
+	}
+
+	&__title {
+		max-width: 450px;
+		color: #1652ac;
+		font-weight: bold;
+		font-size: 48px;
+		font-family: 'BBC Reith Sans';
+		margin-bottom: 60px;
+		margin-top: 100px;
+		line-height: 80px;
+		letter-spacing: -0.4px;
+		@include laptops {
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		@include tablets {
+			max-width: 100%;
+			font-size: 40px;
+		}
+		@include phones {
+			box-sizing: container-box;
+			font-size: 34px;
+			display: flex;
+			padding: 0px;
+		}
+	}
+
+	&__text {
+		max-width: 480px;
+		font-size: 17px;
+		font-weight: 600;
+		font-family: 'Noto Sans';
+		margin-bottom: 70px;
+		line-height: 32px;
+		letter-spacing: -0.4px;
+		@include laptops {
+			margin-bottom: 20px;
+		}
+		@include tablets {
+			max-width: 100%;
+		}
+	}
+
+	&__article {
+		font-size: 20px;
+		font-weight: bold;
+		font-family: 'BBC Reith Sans';
+		color: #1652ac;
+		margin-bottom: 20px;
+		line-height: 40px;
+		letter-spacing: 2.42px;
+		@include phones {
+			font-size: 17px;
+			max-width: 240px;
+			text-align: center;
+			margin-left: 40px;
+			line-height: 40px;
+		}
+	}
+
+	&__subtext {
+		max-width: 450px;
+		font-size: 17px;
+		font-weight: 400;
+		font-family: 'Noto Sans';
+		line-height: 32px;
+		color: #45494F;
+		@include tablets {
+			max-width: 90%;
+		}
+		@include phones {
+			max-width: 100%;
+		}
+		&--mb {
+			margin-bottom: 50px;
+			@include phones {
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	&__bottom-img {
+		margin-bottom: 70px;
+		@include laptops {
+			width: 50%;
+			margin-bottom: 0px;
+		}
+		@include tablets {
+			order: 2;
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		@include phones {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__adaptive-img {
+		display: none;
+		@include phones {
+			display: block;
+			width: 350px;
+			height: 350px;
+		}
+	}
+}

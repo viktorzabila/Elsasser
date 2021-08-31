@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: #000; }
+
+body {
+  line-height: 1.42; }
+
+a {
+  transition: 300ms;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #000; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.btn {
+  cursor: pointer;
+  transition: 0.3s; }
+
+.btn:hover, .btn:active {
+  background: #b20012; }
+
+.hr {
+  width: 180px;
+  color: #d1d3d4; }
+
+.button--n {
+  display: none; }
+
+.navbar-white {
+  background: #000; }
+
+.btn {
+  cursor: pointer;
+  transition: 0.3s; }
+  .btn:hover, .btn:active {
+    background: #b20012; }
+
+.hr {
+  width: 247px;
+  border: 4px solid; }
+  .hr--mb-1 {
+    margin-bottom: 55px; }
+    @media screen and (max-width: 376px) {
+      .hr--mb-1 {
+        border: 4px solid;
+        width: 220px;
+        margin-bottom: 0px;
+        margin-left: 50px; } }
+  .hr--mb-2 {
+    margin-bottom: 110px; }
+    @media screen and (max-width: 1200px) {
+      .hr--mb-2 {
+        margin-bottom: 55px;
+        margin-top: 30px; } }
+    @media screen and (max-width: 376px) {
+      .hr--mb-2 {
+        display: none; } }
+
+.hr--long {
+  border: 2px solid #eef0f4; }
+
+.hr--btm {
+  margin-top: 75px;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 376px) {
+    .hr--btm {
+      margin-top: 5px; } }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+.btn {
+  padding: 0px; }
+
+.burger {
+  margin: 0 auto;
+  padding-top: 10px; }
+  @media screen and (max-width: 376px) {
+    .burger {
+      padding-top: 6px;
+      margin-right: 35px; } }
+
+@media screen and (max-width: 376px) {
+  .menu {
+    display: flex;
+    justify-content: space-between; } }
+
+@media screen and (max-width: 376px) {
+  nav.navbar.navbar-expand-xl.navbar-white.menu {
+    justify-content: space-between; } }
+
+a.nav-link.menu__link:hover {
+  color: #2E75FF; }
+
+a#defaultDropdown.nav-link:hover {
+  color: #45494f;
+  cursor: pointer; }
+
+button.btn.btn-primary.bilder__button:hover {
+  background: #45494f; }
+
+@media screen and (max-width: 1200px) {
+  img.bilder__arr.bilder__arr--lf .ad {
+    display: none; } }

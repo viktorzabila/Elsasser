@@ -1,0 +1,129 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: #000; }
+
+body {
+  line-height: 1.42; }
+
+a {
+  transition: 300ms;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #000; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.btn {
+  cursor: pointer;
+  transition: 0.3s; }
+
+.btn:hover, .btn:active {
+  background: #b20012; }
+
+.hr {
+  width: 180px;
+  color: #d1d3d4; }
+
+.button--n {
+  display: none; }
+
+.bilder__img {
+  max-width: 610px;
+  max-height: 810px;
+  margin: 0 auto; }
+  @media screen and (max-width: 376px) {
+    .bilder__img {
+      margin-bottom: 15px; } }
+
+.bilder__arr {
+  padding: 20px 40px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 21px rgba(64, 68, 75, 0.14);
+  border-radius: 8px; }
+  @media screen and (max-width: 1400px) {
+    .bilder__arr {
+      display: none; } }
+  .bilder__arr--rg {
+    right: -270px;
+    position: absolute;
+    bottom: -116px; }
+  .bilder__arr--lf {
+    left: -630px;
+    position: absolute;
+    bottom: -116px; }
+
+.bilder__title {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding-top: 0px; }
+  @media screen and (max-width: 900px) {
+    .bilder__title {
+      margin-top: 0px; } }
+  @media screen and (max-width: 376px) {
+    .bilder__title {
+      margin-top: 0px;
+      padding-top: 0px;
+      font-size: 20px; } }
+  .bilder__title--ad {
+    margin-top: 190px; }
+    @media screen and (max-width: 900px) {
+      .bilder__title--ad {
+        margin-top: 100px; } }
+    @media screen and (max-width: 376px) {
+      .bilder__title--ad {
+        color: #020303;
+        text-align: center;
+        margin: 70px 15px 0px; } }
+
+.bilder__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 80px; }
+  @media screen and (max-width: 900px) {
+    .bilder__buttons {
+      padding-bottom: 40px; } }
+  @media screen and (max-width: 376px) {
+    .bilder__buttons {
+      padding: 0px 5px 40px; } }
+
+.bilder__button {
+  background: linear-gradient(180deg, #0c5cd6 0%, rgba(0, 56, 140, 0) 100%), #004fc7;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.21);
+  border-radius: 12px;
+  height: 65px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'BBC Reith Sans';
+  line-height: 40px;
+  letter-spacing: 1.42px;
+  color: #fafbfe;
+  text-transform: uppercase;
+  width: 400px;
+  margin: 0px 8px 8px 0; }

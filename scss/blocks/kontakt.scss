@@ -1,0 +1,135 @@
+@import '../mixin';
+
+.kontakt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	&__title {
+		font-size: 34px;
+		color: #1652ac;
+		font-weight: bold;
+		margin-right: 50px;
+		max-width: 450px;
+		white-space: no-wrap;
+		display: inline-block;
+		@include tablets {
+			margin-top: 3%;
+		}
+		@include phones {
+			display: none;
+		}
+	}
+
+	&__ad {
+		display: none;
+		@include phones {
+			display: block;
+			font-size: 26px;
+			color: #1652ac;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__text {
+		font-size: 17px;
+		font-weight: 400;
+		font-family: 'Noto Sans';
+		color: #464C53;
+		max-width: 410px;
+		letter-spacing: -0.4px;
+		margin-right: 50px;
+		line-height: 32px;
+		@include tablets {
+			margin-top: 30px;
+			margin-right: 3%;
+		}
+		@include phones {
+			margin-left: 8%;
+			font-weight: 400;
+			line-height: 32px;
+			font-size: 16px;
+			max-width: 290px;
+			margin-right: 0px;
+		}
+		&--mb {
+			margin-bottom: 50px;
+			margin-top: 75px;
+			@include tablets {
+				margin-top: 30px;
+				margin-right: 3%;
+			}
+			@include phones {
+				margin-top: 0px;
+			}
+		}
+
+		&--pb {
+			padding-bottom: 50px;
+		}
+
+		&__link {
+			color: #2e75ff;
+			text-decoration: none;
+			@include phones {
+				margin-left: 90px;
+				display: inherit;
+			}
+		}
+	}
+
+	&__img {
+		margin-top: 50px;
+		margin-bottom: 30px;
+		@include tablets {
+			margin-bottom: 0px;
+		}
+		@include phones {
+			margin-bottom: 25px;
+		}
+	}
+
+	&__button {
+		color: #ffffff;
+		padding: 0px;
+		width: 300px;
+		margin: 0px;
+		@include phones {
+			width: 340px;
+			margin: 0px 5px;
+		}
+		@include s-phones {
+			width: 260px;
+		}
+	}
+
+	&__arr {
+		margin-right: 20px;
+		display: inline-block;
+		@include phones {
+			margin-right: 30px;
+		}
+	}
+
+	&__href {
+		color: #fff;
+		text-decoration: none;
+		margin-right: 100px;
+		@include phones {
+			margin-right: 130px;
+		}
+		@include s-phones {
+			margin-right: 50px;
+		}
+	}
+
+	@include tablets {
+		flex-direction: column;
+	}
+
+	@include phones {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
