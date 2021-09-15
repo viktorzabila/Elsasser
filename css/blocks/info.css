@@ -133,6 +133,7 @@ li {
       object-fit: contain; } }
   @media screen and (max-width: 376px) {
     .info__img {
+      display: none;
       order: 1;
       width: 375px;
       height: 500px;

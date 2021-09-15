@@ -42,7 +42,7 @@
 		align-items: center;
 		flex-wrap: wrap;
 		@include laptops {
-			margin-left: 5%;
+			margin-left: 2%;
 		}
 		@include phones {
 			margin-left: 0px;

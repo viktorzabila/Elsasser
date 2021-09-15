@@ -89,7 +89,7 @@ li {
     flex-wrap: wrap; }
     @media screen and (max-width: 1200px) {
       .about__items {
-        margin-left: 5%; } }
+        margin-left: 2%; } }
     @media screen and (max-width: 376px) {
       .about__items {
         margin-left: 0px; } }

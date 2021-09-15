@@ -64,6 +64,7 @@
 		padding-bottom: 80px;
 		@include tablets {
 			padding-bottom: 40px;
+			margin-left: 3%;
 		}
 		@include phones {
 			padding: 0px 5px 40px;
